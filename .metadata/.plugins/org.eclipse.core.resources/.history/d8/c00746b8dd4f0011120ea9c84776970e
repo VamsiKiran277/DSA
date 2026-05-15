@@ -1,0 +1,29 @@
+/*
+ * main.c
+ *
+ *  Created on: 14-May-2026
+ *      Author: vamsi
+ */
+
+#include <stdio.h>
+#include <stdint.h>
+
+void insertion_sort (int arr[],int length);
+void insertion_sort (int arr[],int length) {
+	for(int i=1; i<length; i++) {
+		int key = arr[i];
+		int j = i-1;
+		while(j>0 && arr[j]>key) {
+			arr[j+1] = arr[j];
+			j-1 = j;
+		}
+		arr[j+1] = key;
+	}
+}
+
+int main() {
+	int a[] = {31,41,59,26,41,58};
+	insertion_sort(a,6);
+	printf("Below is the sorted array: %d\n",arr[i]);
+	return 0;
+}

@@ -1,0 +1,16 @@
+/*
+ * main.c
+ *
+ *  Created on: 14-May-2026
+ *      Author: vamsi
+ */
+
+#include <stdio.h>
+#include <stdint.h>
+
+int main() {
+	int arr[6] = {31,41,59,26,41,58};
+
+		printf("Below is the sorted array: %d\n",arr[i]);
+	}
+}
