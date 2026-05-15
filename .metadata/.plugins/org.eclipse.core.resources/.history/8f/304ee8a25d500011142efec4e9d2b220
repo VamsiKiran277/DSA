@@ -1,0 +1,42 @@
+/*
+ * main.c
+ *
+ *  Created on: 15-May-2026
+ *      Author: vamsi
+ */
+
+/*
+ * Question
+ * Consider the searching problem:
+Input: A sequence of n numbers A D ha1;a2;:::;ani and a value .
+Output: An index i such that D AŒi or the special value NIL if does not
+appear in A.
+Write pseudocode for linear search, which scans through the sequence, looking
+for . Using a loop invariant, prove that your algorithm is correct. Make sure that
+your loop invariant fulfills the three necessary properties.*/
+
+
+#include <stdio.h>
+
+int find_addr(int arr[],int length,int value);
+int find_addr(int arr[],int length, int value) {
+	for(int i=0; i<length; i++) {
+		if(value == arr[i]) {
+			return arr[i];
+		}
+	}
+
+}
+
+int main() {
+	int a[] = {10,45,7,23,46};
+	int n = sizeof(a)/sizeof(a[0]);
+	int temp =  7;
+	find_addr(a,n,temp);
+	for(int i=0; i<n; i++) {
+		//printf("The address of the Value is: %d and the value is :%d\n",i,a[i]);
+		printf(" %d",a[i]);
+	}
+	printf("\n");
+	return 0;
+}
