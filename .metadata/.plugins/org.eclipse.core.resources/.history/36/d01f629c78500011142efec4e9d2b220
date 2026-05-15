@@ -1,0 +1,39 @@
+/*
+ * main.c
+ *
+ *  Created on: 15-May-2026
+ *      Author: vamsi
+ */
+
+/*
+ * Sorting Strings (Alphabetical Order)
+Goal: Use Insertion Sort to organize an array of strings (names) alphabetically.
+Input: char names[][10] = {"Zara", "Alex", "Ryan", "Bella"};*/
+#include <stdio.h>
+#include <string.h>
+void string_sort(char arr[][10],int length);
+void string_sort(char arr[],int length) {
+	char key[length];
+	for(int i=1; i<length; i++) {
+		strcpy(key,arr[i]);
+		int j = i-1;
+		while(j>=0 && srtcmp(key,arr[j]) >0) {
+			strcpy(arr[j+1],arr[j]);
+			j--;
+		}
+		strcpy(arr[j+1],key);
+	}
+}
+
+int main() {
+	char a1[] = {"Zara", "Alex", "Ryan", "Bella" };
+	int n = 4;
+	string_sort(a1,n);
+	printf("Sorted String is :");
+	for(int i=0; i<n; i++) {
+		printf(" %c",a1[i]);
+	}
+	printf("\n");
+	return 0;
+}
+

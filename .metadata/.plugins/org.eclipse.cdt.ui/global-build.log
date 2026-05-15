@@ -1,5 +1,5 @@
-16:34:48 **** Incremental Build of configuration Debug for project Sum_Two_nBit_Array ****
+17:12:44 **** Incremental Build of configuration Debug for project Insertion Sort_Strings ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-gcc -o Sum_Two_nBit_Array.exe main.o 
-Info: Nothing to build for Sum_Two_nBit_Array
+gcc -o "Insertion Sort_Strings.exe" main.o 
+Info: Nothing to build for Insertion Sort_Strings
