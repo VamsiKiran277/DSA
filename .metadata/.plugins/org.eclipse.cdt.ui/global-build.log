@@ -1,5 +1,5 @@
-22:44:56 **** Incremental Build of configuration Debug for project Insertion Sort ****
+13:23:57 **** Incremental Build of configuration Debug for project Insertion Sort_Descending Order ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-gcc -o "Insertion Sort.exe" main.o 
-Info: Nothing to build for Insertion Sort
+gcc -o "Insertion Sort_Descending Order.exe" main.o 
+Info: Nothing to build for Insertion Sort_Descending Order

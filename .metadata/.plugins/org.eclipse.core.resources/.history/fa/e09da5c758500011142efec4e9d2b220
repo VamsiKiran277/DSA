@@ -6,7 +6,7 @@
  */
 
 #include <stdio.h>
-
+#include <stdint.h>
 
 void insertion_sort (int arr[],int length);
 void insertion_sort (int arr[],int length) {
@@ -23,7 +23,7 @@ void insertion_sort (int arr[],int length) {
 
 int main() {
 	int a[] = {31,41,59,26,41,58};
-	int n = sizeof(a)/sizeof(a[0]);
+	int n = 6;
 	insertion_sort(a,n);
 	printf("Below is the sorted array:\n");
 	for(int i = 0; i < n; i++) {
