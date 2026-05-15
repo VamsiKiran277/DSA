@@ -1,0 +1,38 @@
+/*
+ * main.c
+ *
+ *  Created on: 15-May-2026
+ *      Author: vamsi
+ */
+
+/*Question
+ * Goal: Simulate a scenario where data arrives one by one, and the list must remain sorted at all times.
+Task: Write a program that asks the user to input one integer at a time. After every single input, the program should:
+Insert the new number into a previously sorted array.
+Use the logic of Insertion Sort to place it correctly without re-sorting the whole list from scratch.
+Print the current "live" sorted list.*/
+#include <stdio.h>
+void sort(int arr[],int len);
+void sort(int arr[],int len) {
+	for(int i=1; i<len; i++) {
+		int key = arr[i];
+		int j = i-1;
+		while(j>=0 && arr[j]>key) {
+			arr[j+1] = arr[j];
+			j = j-1;
+		}
+		arr[j+1] = key;
+	}
+}
+
+int main() {
+	int a1[10];
+	int i = 0;
+	printf("Enter an integer to be sorted: ");
+	fflush(stdout);
+	scanf("%d",&a1[i]);
+	printf("The number u entered is %d \n",a1[i]);
+	int result[10] = sort(a1,10);
+	printf("%d",result[i]);
+	return 0;
+}

@@ -1,5 +1,5 @@
-17:12:44 **** Incremental Build of configuration Debug for project Insertion Sort_Strings ****
+17:59:28 **** Rebuild of configuration Debug for project LiveStream ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-gcc -o "Insertion Sort_Strings.exe" main.o 
-Info: Nothing to build for Insertion Sort_Strings
+gcc -o LiveStream.exe main.o 
+Info: Nothing to build for LiveStream
