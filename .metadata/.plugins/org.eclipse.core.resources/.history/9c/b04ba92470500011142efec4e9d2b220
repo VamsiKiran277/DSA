@@ -1,0 +1,33 @@
+/*
+ * main.c
+ *
+ *  Created on: 15-May-2026
+ *      Author: vamsi
+ */
+
+/*
+ * Question
+ * Consider the problem of adding two n-bit binary integers, stored in two n-element
+arrays A and B. The sum of the two integers should be stored in binary form in
+an .n C1/-element array C. State the problem formally and write pseudocode for
+adding the two integers.*/
+
+#include <stdio.h>
+int Sum(int arr1[],int arr2[],int n);
+int Sum(int arr1[],int arr2[],int n) {
+	int result[n] ;
+	for(int i=0; i<n; i++) {
+		result[i] = arr1[i] + arr2[i];
+	}
+	return result;
+}
+
+int main() {
+	int a1[] = {1,2,3};
+	int a2[] = {3,2,1};
+	int n = 3;
+	int result = Sum(a1,a2,n);
+	for(int i=0; i<n; i++) {
+		printf("%d",result[i]);
+	}
+}
